@@ -13,6 +13,7 @@ class SecondViewController_1st_Seminar: UIViewController {
         let label = UILabel()
         label.text = "제 이름은요!"
         label.font = .boldSystemFont(ofSize: 20)
+        label.shadowColor = .green
         return label
     }()
     
@@ -21,6 +22,8 @@ class SecondViewController_1st_Seminar: UIViewController {
         button.setTitle("뒤로가기", for: .normal)
         button.setTitleColor(.blue, for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 20)
+        button.layer.borderWidth = 5
+
         
         button.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
         return button
