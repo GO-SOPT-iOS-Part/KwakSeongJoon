@@ -15,7 +15,7 @@ class FirstViewController_1st_Seminar: UIViewController {
         label.font = .systemFont(ofSize:16)
         label.textColor = .blue
         label.textAlignment = .center
-        label.shadowColor = .green
+        label.shadowColor = .green //추가
         return label
     }()
     
@@ -67,7 +67,6 @@ class FirstViewController_1st_Seminar: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.addSubview(navigationBar) //없어도 잘 실행되는데 왜 있어야되는지 모르겠음
         let navItem = UINavigationItem(title: "iOS 짱짱맨") // title, 오른쪽왼쪽 버튼은 UINavigationItem에 있으므로 생성해줌
         navigationBar.setItems([navItem], animated: true) //생성한 것을 navigation bar에 넣어줌
         
