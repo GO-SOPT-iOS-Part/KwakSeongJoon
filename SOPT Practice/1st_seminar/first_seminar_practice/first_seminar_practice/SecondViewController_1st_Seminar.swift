@@ -13,6 +13,7 @@ class SecondViewController_1st_Seminar: UIViewController {
         let label = UILabel()
         label.text = "제 이름은요!"
         label.font = .boldSystemFont(ofSize: 20)
+        label.shadowColor = .green
         return label
     }()
     
