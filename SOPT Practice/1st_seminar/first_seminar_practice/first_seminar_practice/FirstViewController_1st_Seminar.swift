@@ -6,9 +6,9 @@
 //
 
 import UIKit
-
-class FirstViewController_1st_Seminar: UIViewController {
     
+class FirstViewController_1st_Seminar: UIViewController {
+        
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.text = "이름이 무엇인가요?"
@@ -46,12 +46,12 @@ class FirstViewController_1st_Seminar: UIViewController {
     
     private let nameTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "이름을 입력해주세요" //텍스트 필드에 아무것도 없을 때 기본적으로 보여지는 텍스트, 텍스트 필드에 입력하면 사라짐
+        textField.placeholder = "ex)곽성준" //텍스트 필드에 아무것도 없을 때 기본적으로 보여지는 텍스트, 텍스트 필드에 입력하면 사라짐
         textField.clearButtonMode = .always //텍스트 지우는 버튼, .whildediting 을 하면 입력할 때만 보임
-        textField.layer.borderColor = UIColor.gray.cgColor
+        textField.layer.borderColor = UIColor.blue.cgColor
         textField.layer.borderWidth = 1
-        textField.text = "ex) 곽성준"  //텍스트 필드에 적혀 있는 것
-        //이렇게 되면 텍스트 필드에 ex)곽성준 적혀있고 클릭하면 곽성준을 지우고 써야됨
+        textField.textColor = .orange
+        
         
         return textField
     }()
@@ -111,7 +111,7 @@ private extension FirstViewController_1st_Seminar {
                                      pushButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
                                      pushButton.heightAnchor.constraint(equalToConstant: 48)])
         
-        NSLayoutConstraint.activate([navigationBar.topAnchor.constraint(equalTo: view.topAnchor, constant: 200),
+        NSLayoutConstraint.activate([navigationBar.topAnchor.constraint(equalTo: view.topAnchor, constant: 150),
                                      navigationBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
                                      navigationBar.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30)])
         
