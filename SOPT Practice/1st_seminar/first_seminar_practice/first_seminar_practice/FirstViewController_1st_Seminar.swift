@@ -11,7 +11,7 @@ class FirstViewController_1st_Seminar: UIViewController {
     
     private let nameLabel: UILabel = {
         let label = UILabel()
-        label.text = "이름"
+        label.text = "이름....."
         label.font = .systemFont(ofSize:16)
         label.textColor = .blue
         label.textAlignment = .center
