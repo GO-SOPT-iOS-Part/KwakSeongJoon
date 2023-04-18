@@ -27,7 +27,6 @@ class Welcome_ViewController: UIViewController {
         $0.backgroundColor = .red
         $0.setTitle("메인으로", for: .normal)
         $0.setTitleColor(.white, for: .normal)
-        
         $0.addTarget(self, action: #selector(goToMainButtonTapped), for: .touchUpInside)
     }
     
@@ -39,7 +38,10 @@ class Welcome_ViewController: UIViewController {
     }
     
     func idData(id: String){
-        idLabel.text = "\(id)님 반가워요"
+    
+        idLabel.numberOfLines = 2
+        idLabel.text = "\(id)님 \n반가워요"
+        idLabel.textAlignment = .center
     }
 }
 

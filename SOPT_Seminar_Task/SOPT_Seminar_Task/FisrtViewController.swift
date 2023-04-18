@@ -13,8 +13,6 @@ import SnapKit
 class FisrtViewController: UIViewController, UITextFieldDelegate {
     
     
-    
-    
     private let titleLabel = UILabel().then{
         $0.text = "TVING ID 로그인"
         $0.textColor = .white
@@ -24,7 +22,7 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
     
     private let idField = UITextField().then{
         
-        if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton {
+        if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton { //clear 버튼 이미지 변경
             clearButton.setImage(UIImage(named: "clearbutton"), for: .normal)
         }
         $0.clearButtonMode = .whileEditing
@@ -32,6 +30,7 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         $0.textAlignment = .left
         $0.backgroundColor = .darkGray
         $0.placeholder = "아이디"
+        $0.autocapitalizationType = .none
         $0.setPlaceholderColor(.gray)
         $0.addLeftPadding()
         
@@ -40,7 +39,7 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
     
     private let pwField = ModifiedTextField().then{
         
-        if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton {
+        if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton { //clear 버튼 이미지 변경
             clearButton.setImage(UIImage(named: "clearbutton"), for: .normal)
         }
         $0.clearButtonMode = .whileEditing
@@ -51,14 +50,14 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         $0.font = UIFont(name: "Pretendard-SemiBold", size: 15)
         $0.placeholder = "비밀번호"
         $0.isSecureTextEntry = true
+        $0.autocapitalizationType = .none   //시작 소문자로
         $0.setPlaceholderColor(.gray)
         $0.addLeftPadding()
         
     }
     lazy var eyeButton = UIButton().then
     {
-        $0.setImage(UIImage(named: "hiePwEye.png"), for: .normal)
-        $0.setImage(UIImage(named: "showPwEye.png"), for: .selected)
+        $0.setImage(UIImage(named: "hiePwEye"), for: .normal)
         $0.addTarget(self, action: #selector(eyeButtonTapped), for:.touchUpInside)
         
     }
@@ -74,7 +73,7 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         $0.isEnabled = false
         
         $0.addTarget(self, action: #selector(pushButtonTapped), for: .touchUpInside)
-       
+        
     }
     
     private lazy var findIdButton = UIButton().then{
@@ -150,12 +149,18 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    
     @objc
-    func eyeButtonTapped()
-    {
-        eyeButton.isSelected.toggle()
+    func eyeButtonTapped() {
         pwField.isSecureTextEntry.toggle()
+        if pwField.isSecureTextEntry {
+            eyeButton.setImage(UIImage(named: "hiePwEye"), for: .normal)
+        }
+        else {
+            eyeButton.setImage(UIImage(named: "showPwEye"), for: .normal)
+        }
     }
+    
 }
 
 
@@ -234,7 +239,7 @@ private extension FisrtViewController{
             $0.top.equalTo(findPwButton.snp.bottom).offset(24)
             $0.trailing.equalToSuperview().offset(-60)
         }
-    
+        
     }
     
     func pushToWelcomViewController(){
