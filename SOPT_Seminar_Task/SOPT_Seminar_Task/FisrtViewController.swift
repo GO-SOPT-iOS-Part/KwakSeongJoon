@@ -132,13 +132,18 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         // textField 눌렀을 때, border 색상 변경
         textField.layer.borderColor = UIColor.white.cgColor
-        
+        if textField == pwField {
+            eyeButton.isHidden = false
+            
+        }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         // 다시 안눌렀을 때, 기본 border 색상으로 변경
         textField.layer.borderColor = UIColor.gray.cgColor
+        eyeButton.isHidden = true
     }
+
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
         // 두 개의 UITextField 중 하나라도 텍스트가 없으면 UIButton을 비활성화
