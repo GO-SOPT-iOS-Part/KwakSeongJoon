@@ -34,10 +34,9 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         $0.setPlaceholderColor(.gray)
         $0.addLeftPadding()
         
-        
     }
-    
-    private let pwField = ModifiedTextField().then{
+        
+    private let pwField = ModifiedTextField().then{  
         
         if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton { //clear 버튼 이미지 변경
             clearButton.setImage(UIImage(named: "clearbutton"), for: .normal)
@@ -92,10 +91,9 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         $0.contentHorizontalAlignment = .center
     }
     
-    private let middleLabel = UILabel().then
+    private let dividingLine = UIView().then
     {
-        $0.text = "|"
-        $0.textColor = UIColor(red: 0.18, green: 0.18, blue: 0.18, alpha: 1)
+        $0.backgroundColor = UIColor(red: 0.18, green: 0.18, blue: 0.18, alpha: 1)
     }
     
     private let askNoId = UILabel().then
@@ -119,17 +117,22 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        idField.delegate = self
-        pwField.delegate = self
-        
+        setDelegate()
         style()
         setLayout()
         
     }
     
+    func setDelegate(){
+        
+        idField.delegate = self
+        pwField.delegate = self
+    }
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         // textField 눌렀을 때, border 색상 변경
         textField.layer.borderColor = UIColor.white.cgColor
+        
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -173,9 +176,10 @@ private extension FisrtViewController{
     
     func setLayout(){
         
-        [titleLabel,idField,pwField,loginButton,eyeButton, findIdButton, findPwButton, middleLabel, askNoId, makeIdButton].forEach{
-            view.addSubview($0)
-        }
+        
+        view.addSubviews(titleLabel, idField,pwField, loginButton ,eyeButton, findIdButton
+        ,dividingLine, findPwButton, askNoId, makeIdButton)
+        
         
         titleLabel.snp.makeConstraints{
             $0.centerX.equalToSuperview()
@@ -222,10 +226,12 @@ private extension FisrtViewController{
             
         }
         
-        middleLabel.snp.makeConstraints
+        dividingLine.snp.makeConstraints
         {
-            $0.top.equalTo(loginButton.snp.bottom).offset(36)
-            $0.leading.equalTo(findIdButton.snp.trailing).offset(33)
+            $0.leading.equalTo(findIdButton.snp.trailing).offset(34)
+            $0.top.equalTo(loginButton.snp.bottom).offset(35)
+            $0.width.equalTo(2)
+            $0.height.equalTo(18)
         }
         
         askNoId.snp.makeConstraints
@@ -253,37 +259,5 @@ private extension FisrtViewController{
     @objc
     func pushButtonTapped(){
         pushToWelcomViewController()
-    }
-}
-
-extension UITextField {
-    
-    func addLeftPadding() {
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 22, height: self.frame.size.height))
-        self.leftView = paddingView
-        self.leftViewMode = .always
-    }
-    
-    func setPlaceholderColor(_ placeholderColor: UIColor) {  //placeholder 색깔 정해주는 것
-        attributedPlaceholder = NSAttributedString(
-            string: placeholder ?? "",
-            attributes: [
-                .foregroundColor: placeholderColor,
-                .font: font
-            ].compactMapValues { $0 }
-        )
-    }
-}
-
-extension UIButton {
-    
-    func setUnderline() {
-        guard let title = title(for: .normal) else { return }
-        let attributedString = NSMutableAttributedString(string: title)
-        attributedString.addAttribute(.underlineStyle,
-                                      value: NSUnderlineStyle.single.rawValue,
-                                      range: NSRange(location: 0, length: title.count)
-        )
-        setAttributedTitle(attributedString, for: .normal)
     }
 }

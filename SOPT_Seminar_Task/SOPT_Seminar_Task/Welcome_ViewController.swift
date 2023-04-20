@@ -36,9 +36,13 @@ class Welcome_ViewController: UIViewController {
         style()
         setLayout()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
     
     func idData(id: String){
-    
+        
         idLabel.numberOfLines = 2
         idLabel.text = "\(id)님 \n반가워요"
         idLabel.textAlignment = .center
@@ -52,9 +56,7 @@ private extension Welcome_ViewController{
     }
     
     func setLayout(){
-        [tvingImage,idLabel,goToMainButton].forEach{
-            view.addSubview($0)
-        }
+        view.addSubviews(tvingImage, idLabel, goToMainButton)
         
         tvingImage.snp.makeConstraints{
             $0.top.equalToSuperview().inset(58)

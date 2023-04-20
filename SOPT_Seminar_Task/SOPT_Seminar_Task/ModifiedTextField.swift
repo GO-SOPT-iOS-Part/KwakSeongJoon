@@ -4,7 +4,9 @@
 //
 //  Created by KYUBO A. SHIM on 2023/04/14.
 //
+ 
 
+//기본 clearbutton 위치 변경
 import UIKit
 
 final class ModifiedTextField: UITextField {
