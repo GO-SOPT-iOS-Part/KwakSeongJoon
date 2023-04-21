@@ -133,7 +133,7 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         // textField 눌렀을 때, border 색상 변경
         textField.layer.borderColor = UIColor.white.cgColor
         if textField == pwField {
-            eyeButton.isHidden = false
+            eyeButton.isHidden = false  // editing 할 동안, 눈 모양 보이게
             
         }
     }
@@ -141,7 +141,9 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         // 다시 안눌렀을 때, 기본 border 색상으로 변경
         textField.layer.borderColor = UIColor.gray.cgColor
-        eyeButton.isHidden = true
+        eyeButton.isHidden = true   // editing 끝나면, 눈 모양 사라지게
+        
+        
     }
 
     
