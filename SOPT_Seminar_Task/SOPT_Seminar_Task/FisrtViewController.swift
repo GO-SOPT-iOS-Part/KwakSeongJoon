@@ -5,22 +5,22 @@
 //  Created by 곽성준 on 2023/04/12.
 //
 
+import SnapKit
+import Then
 import UIKit
 
-import Then
-import SnapKit
 
-class FisrtViewController: UIViewController, UITextFieldDelegate {
+final class FisrtViewController: UIViewController, UITextFieldDelegate {
+
     
-    
-    private let titleLabel = UILabel().then{
+    private let titleLabel = UILabel().then {
         $0.text = "TVING ID 로그인"
         $0.textColor = .white
         $0.textAlignment = .center
         $0.font = .systemFont(ofSize:23)
     }
     
-    private let idField = UITextField().then{
+    private let idField = UITextField().then {
         
         if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton { //clear 버튼 이미지 변경
             clearButton.setImage(UIImage(named: "clearbutton"), for: .normal)
@@ -36,7 +36,7 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         
     }
         
-    private let pwField = ModifiedTextField().then{  
+    private let pwField = ModifiedTextField().then {
         
         if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton { //clear 버튼 이미지 변경
             clearButton.setImage(UIImage(named: "clearbutton"), for: .normal)
@@ -54,14 +54,13 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         $0.addLeftPadding()
         
     }
-    lazy var eyeButton = UIButton().then
-    {
+    lazy var eyeButton = UIButton().then {
         $0.setImage(UIImage(named: "hiePwEye"), for: .normal)
         $0.addTarget(self, action: #selector(eyeButtonTapped), for:.touchUpInside)
         
     }
     
-    private lazy var loginButton = UIButton().then{
+    private lazy var loginButton = UIButton().then {
         $0.setTitle("로그인하기", for: .normal)
         $0.setTitleColor(.lightGray, for: .normal)
         $0.backgroundColor = .black
@@ -75,7 +74,7 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    private lazy var findIdButton = UIButton().then{
+    private lazy var findIdButton = UIButton().then {
         $0.setTitle("아이디찾기", for: .normal)
         $0.setTitleColor(.lightGray, for: .normal)
         $0.backgroundColor = .black
@@ -83,7 +82,7 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         $0.contentHorizontalAlignment = .center
     }
     
-    private lazy var findPwButton = UIButton().then{
+    private lazy var findPwButton = UIButton().then {
         $0.setTitle("비밀번호찾기", for: .normal)
         $0.setTitleColor(.lightGray, for: .normal)
         $0.backgroundColor = .black
@@ -91,21 +90,18 @@ class FisrtViewController: UIViewController, UITextFieldDelegate {
         $0.contentHorizontalAlignment = .center
     }
     
-    private let dividingLine = UIView().then
-    {
+    private let dividingLine = UIView().then {
         $0.backgroundColor = UIColor(red: 0.18, green: 0.18, blue: 0.18, alpha: 1)
     }
     
-    private let askNoId = UILabel().then
-    {
+    private let askNoId = UILabel().then {
         $0.text = "아직 계정이 없으신가요?"
         $0.textColor = UIColor(red: 0.384, green: 0.384, blue: 0.384, alpha: 1)
         $0.font = UIFont(name: "Pretendard-SemiBold", size: 14)
         $0.textAlignment = .center
     }
     
-    private lazy var makeIdButton = UIButton().then
-    {
+    private lazy var makeIdButton = UIButton().then {
         $0.setTitle("닉네임 만들러가기", for: .normal)
         $0.setTitleColor(.lightGray, for: .normal)
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 16)

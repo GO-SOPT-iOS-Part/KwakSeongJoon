@@ -4,8 +4,10 @@
 //
 //  Created by 곽성준 on 2023/04/14.
 //
-import Then
+
 import SnapKit
+import Then
+
 import UIKit
 
 class Welcome_ViewController: UIViewController {
