@@ -80,8 +80,8 @@ private extension Welcome_ViewController{
     
     @objc
     func goToMainButtonTapped(){
-        self.navigationController?.popViewController(animated: true)
-    }
+        let secondViewController = MainViewController()
+        self.navigationController?.pushViewController(secondViewController, animated: true)    }
 }
 
 

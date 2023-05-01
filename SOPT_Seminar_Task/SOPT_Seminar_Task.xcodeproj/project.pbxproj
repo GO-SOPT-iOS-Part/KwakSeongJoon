@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40C89722A0029CD00611369 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C89712A0029CD00611369 /* MainViewController.swift */; };
+		F40C89742A002C7000611369 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C89732A002C7000611369 /* MyPageViewController.swift */; };
 		F4867B0929F145E3002577E8 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0829F145E3002577E8 /* UIView++.swift */; };
 		F4867B0B29F14612002577E8 /* UIButton++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0A29F14612002577E8 /* UIButton++.swift */; };
 		F4867B0F29F14694002577E8 /* UITextField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0E29F14694002577E8 /* UITextField++.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F40C89712A0029CD00611369 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F40C89732A002C7000611369 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		F4867B0829F145E3002577E8 /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F4867B0A29F14612002577E8 /* UIButton++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton++.swift"; sourceTree = "<group>"; };
 		F4867B0E29F14694002577E8 /* UITextField++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField++.swift"; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				F4867B0829F145E3002577E8 /* UIView++.swift */,
 				F4867B0A29F14612002577E8 /* UIButton++.swift */,
 				F4867B0E29F14694002577E8 /* UITextField++.swift */,
+				F40C89712A0029CD00611369 /* MainViewController.swift */,
+				F40C89732A002C7000611369 /* MyPageViewController.swift */,
 			);
 			path = SOPT_Seminar_Task;
 			sourceTree = "<group>";
@@ -175,8 +181,10 @@
 				F4867B0B29F14612002577E8 /* UIButton++.swift in Sources */,
 				F4AFD78D29EEDBDB00354128 /* Welcome_ViewController.swift in Sources */,
 				F4AFD79A29EEE1DC00354128 /* FisrtViewController.swift in Sources */,
+				F40C89742A002C7000611369 /* MyPageViewController.swift in Sources */,
 				F4AFD77929EED45800354128 /* SceneDelegate.swift in Sources */,
 				F4AFD78F29EEDBF400354128 /* ModifiedTextField.swift in Sources */,
+				F40C89722A0029CD00611369 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
