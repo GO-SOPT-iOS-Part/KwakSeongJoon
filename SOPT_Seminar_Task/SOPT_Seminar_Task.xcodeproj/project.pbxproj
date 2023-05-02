@@ -12,6 +12,9 @@
 		F4867B0929F145E3002577E8 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0829F145E3002577E8 /* UIView++.swift */; };
 		F4867B0B29F14612002577E8 /* UIButton++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0A29F14612002577E8 /* UIButton++.swift */; };
 		F4867B0F29F14694002577E8 /* UITextField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0E29F14694002577E8 /* UITextField++.swift */; };
+		F492A46B2A00FB33008EB376 /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F492A46A2A00FB33008EB376 /* MyPageTableViewCell.swift */; };
+		F492A46D2A01690A008EB376 /* TopHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F492A46C2A01690A008EB376 /* TopHeader.swift */; };
+		F492A46F2A018967008EB376 /* SecondSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F492A46E2A018967008EB376 /* SecondSectionHeader.swift */; };
 		F4AFD77729EED45800354128 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AFD77629EED45800354128 /* AppDelegate.swift */; };
 		F4AFD77929EED45800354128 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AFD77829EED45800354128 /* SceneDelegate.swift */; };
 		F4AFD77E29EED45800354128 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4AFD77C29EED45800354128 /* Main.storyboard */; };
@@ -31,6 +34,9 @@
 		F4867B0829F145E3002577E8 /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F4867B0A29F14612002577E8 /* UIButton++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton++.swift"; sourceTree = "<group>"; };
 		F4867B0E29F14694002577E8 /* UITextField++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField++.swift"; sourceTree = "<group>"; };
+		F492A46A2A00FB33008EB376 /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
+		F492A46C2A01690A008EB376 /* TopHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeader.swift; sourceTree = "<group>"; };
+		F492A46E2A018967008EB376 /* SecondSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSectionHeader.swift; sourceTree = "<group>"; };
 		F4AFD77329EED45800354128 /* SOPT_Seminar_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_Seminar_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AFD77629EED45800354128 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4AFD77829EED45800354128 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +95,10 @@
 				F4867B0A29F14612002577E8 /* UIButton++.swift */,
 				F4867B0E29F14694002577E8 /* UITextField++.swift */,
 				F40C89712A0029CD00611369 /* MainViewController.swift */,
+				F492A46E2A018967008EB376 /* SecondSectionHeader.swift */,
+				F492A46C2A01690A008EB376 /* TopHeader.swift */,
 				F40C89732A002C7000611369 /* MyPageViewController.swift */,
+				F492A46A2A00FB33008EB376 /* MyPageTableViewCell.swift */,
 			);
 			path = SOPT_Seminar_Task;
 			sourceTree = "<group>";
@@ -180,7 +189,10 @@
 				F4AFD77729EED45800354128 /* AppDelegate.swift in Sources */,
 				F4867B0B29F14612002577E8 /* UIButton++.swift in Sources */,
 				F4AFD78D29EEDBDB00354128 /* Welcome_ViewController.swift in Sources */,
+				F492A46F2A018967008EB376 /* SecondSectionHeader.swift in Sources */,
 				F4AFD79A29EEE1DC00354128 /* FisrtViewController.swift in Sources */,
+				F492A46D2A01690A008EB376 /* TopHeader.swift in Sources */,
+				F492A46B2A00FB33008EB376 /* MyPageTableViewCell.swift in Sources */,
 				F40C89742A002C7000611369 /* MyPageViewController.swift in Sources */,
 				F4AFD77929EED45800354128 /* SceneDelegate.swift in Sources */,
 				F4AFD78F29EEDBF400354128 /* ModifiedTextField.swift in Sources */,
