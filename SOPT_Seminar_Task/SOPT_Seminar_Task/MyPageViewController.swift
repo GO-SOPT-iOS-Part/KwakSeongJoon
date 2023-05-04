@@ -21,25 +21,10 @@ class MyPageViewController: UIViewController {
     private let backButton = UIButton()
     private let alarmButton = UIButton()
     private let settingButton = UIButton()
-    //    private let backButton = UIButton().then{
-    //        $0.setImage(UIImage(named: "backbutton_image"), for: .normal)
-    //
-    //    }
-    //
-    //    private let alertButton = UIButton().then{
-    //        $0.setImage(UIImage(named: "alert_image"), for: .normal)
-    //
-    //    }
-    //
-    //    private let settingButton = UIButton().then{
-    //        $0.setImage(UIImage(named: "setting_image"), for: .normal)
-    //
-    //    }
     
     private let FirstSectionData: [String] = ["이용권", "1:1 문의내역", "예약알림", "회원정보 수정", "프로모션 정보 수신 동의"]
     
     private let SecondSectionData: [String] = ["공지사항", "이벤트", "고객센터", "티빙 알아보기"]
-    
     
     // MARK - LifeCycle
     
@@ -57,9 +42,7 @@ class MyPageViewController: UIViewController {
         
         setNavigationBar()
     }
-    
-    // MARK - Helper
-    
+        
     func setNavigationBar() {
         
         self.navigationController?.isNavigationBarHidden = false
@@ -118,36 +101,22 @@ class MyPageViewController: UIViewController {
             $0.bottom.trailing.leading.equalToSuperview()
         }
         
-        //        backButton.snp.makeConstraints{
-        //            $0.top.equalToSuperview().inset(73)
-        //            $0.leading.equalToSuperview().inset(24)
-        //        }
-        //
-        //        alertButton.snp.makeConstraints{
-        //            $0.leading.equalTo(backButton.snp.trailing).offset(246)
-        //            $0.top.equalToSuperview().inset(56)
-        //        }
-        //
-        //        settingButton.snp.makeConstraints{
-        //            $0.leading.equalTo(alertButton.snp.trailing).offset(9)
-        //            $0.top.equalToSuperview().inset(65)
-        //
-        //        }
-        //
         headerViewLayout()
         
+        footerViewLayout()
+
         deleteFooter()
         
-        footerViewLayout()
         
     }
-    //tableview 스타일을 grouped으로 하면 섹션?footer가 생기는데 이 footer를 지우는 함수
     
     @objc
     func backButtonTapped(){
         
     }
     
+    //tableview 스타일을 grouped으로 하면 섹션?footer가 생기는데 이 footer를 지우는 함수
+
     private func deleteFooter(){
         
         tableView.tableFooterView = UIView(frame: .zero)
@@ -188,8 +157,9 @@ extension MyPageViewController: UITableViewDelegate{
         let header = SecondSEctionHeader()
         if section == 1 {
             return header
-        }else
-        {return nil
+        } else
+        {
+            return nil
             
         }
     }

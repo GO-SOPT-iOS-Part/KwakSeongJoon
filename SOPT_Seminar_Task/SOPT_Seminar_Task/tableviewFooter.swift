@@ -19,24 +19,33 @@ class tableviewFooter: UIView{
         $0.layer.borderColor = UIColor.gray4.cgColor
         $0.layer.borderWidth = 1
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-//        $0.contentHorizontalAlignment = .center
+        //        $0.contentHorizontalAlignment = .center
         
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        setStyle()
+        setLayout()
+        
+    }
+    
+    private func setStyle(){
+        
         backgroundColor = .black
         
-        addSubview(logoutButton)
+    }
+    
+    private func setLayout(){
         
+        addSubview(logoutButton)
         logoutButton.snp.makeConstraints{
             $0.width.equalTo(350)
             $0.height.equalTo(40)
             $0.centerX.equalToSuperview()
-        
+            
         }
-        
     }
     
     required init?(coder: NSCoder) {

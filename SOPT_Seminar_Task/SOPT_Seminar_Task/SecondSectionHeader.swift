@@ -14,6 +14,12 @@ class SecondSEctionHeader: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        setLayout()
+       
+    }
+    
+    private func setLayout(){
+        
         addSubview(divider)
         
         divider.snp.makeConstraints{
@@ -21,8 +27,8 @@ class SecondSEctionHeader: UIView {
             $0.centerX.equalToSuperview()
             $0.width.equalTo(359)
             $0.height.equalTo(1)
+            
         }
-       
     }
 
     required init?(coder aDecoder: NSCoder) {

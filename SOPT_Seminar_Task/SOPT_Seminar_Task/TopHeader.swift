@@ -76,11 +76,11 @@ class TopHeader: UIView{
         label.attributedText = attributedString
         
         //줄간격을 조절하면 이미지가 사라짐
-//        let attrString = NSMutableAttributedString(string: label.text!)
-//        let paragraphStyle = NSMutableParagraphStyle()
-//        paragraphStyle.lineSpacing = 7
-//        attrString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attrString.length))
-//        label.attributedText = attrString
+        //        let attrString = NSMutableAttributedString(string: label.text!)
+        //        let paragraphStyle = NSMutableParagraphStyle()
+        //        paragraphStyle.lineSpacing = 7
+        //        attrString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attrString.length))
+        //        label.attributedText = attrString
         label.textColor = .gray2
         label.font = .systemFont(ofSize: 12)
         label.numberOfLines = 2
@@ -112,9 +112,22 @@ class TopHeader: UIView{
         
     }
     
-    
     override init(frame: CGRect) {
+        
         super.init(frame: frame)
+        
+        setStyle()
+        setLayout()
+        
+    }
+    
+    func setStyle(){
+        
+        backgroundColor = .black
+        
+    }
+    
+    func setLayout(){
         
         addSubviews(profileImage, myCashGrayStackView, backgroundView, profileName, profileChangeButton)
         
@@ -171,7 +184,7 @@ class TopHeader: UIView{
         noticeGrayLabel.snp.makeConstraints{
             $0.centerY.equalToSuperview()
             $0.leading.equalToSuperview().inset(18)
-           
+            
         }
         
         NextButton.snp.makeConstraints{
@@ -196,9 +209,6 @@ class TopHeader: UIView{
             $0.height.equalTo(15)
             
         }
-        
-        backgroundColor = .black
-        
     }
     
     required init?(coder: NSCoder) {
