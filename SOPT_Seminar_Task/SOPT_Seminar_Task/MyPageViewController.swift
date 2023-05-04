@@ -42,7 +42,7 @@ class MyPageViewController: UIViewController {
         
         setNavigationBar()
     }
-        
+    
     func setNavigationBar() {
         
         self.navigationController?.isNavigationBarHidden = false
@@ -104,19 +104,24 @@ class MyPageViewController: UIViewController {
         headerViewLayout()
         
         footerViewLayout()
-
+        
         deleteFooter()
         
         
     }
     
     @objc
-    func backButtonTapped(){
+    func backButtonTapped() {
         
+        if self.navigationController == nil {
+            self.dismiss(animated: true, completion: nil)
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     
     //tableview 스타일을 grouped으로 하면 섹션?footer가 생기는데 이 footer를 지우는 함수
-
+    
     private func deleteFooter(){
         
         tableView.tableFooterView = UIView(frame: .zero)
