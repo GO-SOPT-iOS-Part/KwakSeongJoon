@@ -1,31 +1,32 @@
-//
-//  SecondSectionHeader.swift
-//  SOPT_Seminar_Task
-//
-//  Created by 곽성준 on 2023/05/03.
-//
-
-import Foundation
 import UIKit
 
-class SecondSectionHeader: UIView{
-    
-    let divideView =  UIView().then{
+import SnapKit
+import Then
+
+
+
+class SecondSEctionHeader: UIView {
+
+    let divider = UILabel().then{
         $0.backgroundColor = .lightGray
     }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        addSubview(divideView)
-        //        divideView.snp.makeConstraints{
-        //            $0.leading.equalToSuperview().inset(8)
-        //            $0.top.equalToSuperview().inset(375)
-        ////            $0.height.equalTo(1)
-        //            $0.width.equalTo(359)
+        addSubview(divider)
+        
+        divider.snp.makeConstraints{
+            $0.centerY.equalToSuperview()
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(359)
+            $0.height.equalTo(1)
+        }
+       
     }
-    
-    required init(coder: NSCoder) {
-        fatalError("iii")
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
+
 }

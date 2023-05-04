@@ -12,6 +12,12 @@ import UIKit
 
 class Welcome_ViewController: UIViewController {
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     private let tvingImage = UIImageView().then{
         
         $0.image = UIImage(named: "image 1.png")
