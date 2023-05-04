@@ -24,7 +24,6 @@ class MyPageTableViewCell: UITableViewCell {
         
         contentView.addSubview(nextButton)
 
-    
         nextButton.snp.makeConstraints{
             $0.centerY.equalToSuperview()
             $0.trailing.equalToSuperview()

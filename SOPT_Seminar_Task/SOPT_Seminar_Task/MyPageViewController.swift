@@ -86,7 +86,7 @@ class MyPageViewController: UIViewController {
         
     }
     
-    private func setLayout(){
+     func setLayout(){
         
         view.addSubview(tableView)
         
@@ -102,10 +102,6 @@ class MyPageViewController: UIViewController {
         }
         
         headerViewLayout()
-        
-        footerViewLayout()
-        
-        deleteFooter()
         
         
     }
@@ -136,10 +132,6 @@ class MyPageViewController: UIViewController {
         //        tableHeaderView.layoutIfNeeded()
     }
     
-    private func footerViewLayout() {
-        tableView.tableFooterView = SOPT_Seminar_Task.tableviewFooter(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 100))
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -168,6 +160,8 @@ extension MyPageViewController: UITableViewDelegate{
             
         }
     }
+    
+    
     //셀 클릭했을 때 회색 사라지게 해주는 function
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -180,6 +174,19 @@ extension MyPageViewController: UITableViewDataSource{
         return 2
     }
     
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if section == 0{
+            return 0
+        } else {return 10}
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        if section == 0{
+            return nil
+        } else{
+            return tableviewFooter()
+        }
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0{
             return FirstSectionData.count
