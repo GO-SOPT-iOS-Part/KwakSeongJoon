@@ -74,11 +74,13 @@ class TopHeader: UIView{
         attributedString.append(NSAttributedString(attachment: image1))
         attributedString.append(NSAttributedString(string: " 등 인기 프로그램과 \n다양한 영화 콘텐츠를 자유롭게 시청하세요! "))
         label.attributedText = attributedString
-        let attrString = NSMutableAttributedString(string: label.text!)
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 7
-        attrString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attrString.length))
-        label.attributedText = attrString
+        
+        //줄간격을 조절하면 이미지가 사라짐
+//        let attrString = NSMutableAttributedString(string: label.text!)
+//        let paragraphStyle = NSMutableParagraphStyle()
+//        paragraphStyle.lineSpacing = 7
+//        attrString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attrString.length))
+//        label.attributedText = attrString
         label.textColor = .gray2
         label.font = .systemFont(ofSize: 12)
         label.numberOfLines = 2
