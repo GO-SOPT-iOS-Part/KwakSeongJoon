@@ -7,9 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40C89722A0029CD00611369 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C89712A0029CD00611369 /* MainViewController.swift */; };
+		F40C89742A002C7000611369 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C89732A002C7000611369 /* MyPageViewController.swift */; };
+		F4162B2A2A08E1FE005D347F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B292A08E1FE005D347F /* BaseViewController.swift */; };
+		F4162B2E2A08E278005D347F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B2D2A08E278005D347F /* BaseView.swift */; };
+		F4162B322A0908BA005D347F /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B312A0908BA005D347F /* UIImage+.swift */; };
+		F4162B342A095A30005D347F /* MainCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B332A095A30005D347F /* MainCollectionViewModel.swift */; };
+		F4162B372A095AB3005D347F /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B362A095AB3005D347F /* MainPageCollectionViewCell.swift */; };
+		F4162B392A095E92005D347F /* tapBarItem_struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B382A095E92005D347F /* tapBarItem_struct.swift */; };
+		F4162B3C2A0A4E82005D347F /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B3B2A0A4E82005D347F /* homePageViewController.swift */; };
+		F4162B3E2A0A4ECE005D347F /* livePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B3D2A0A4ECE005D347F /* livePageViewController.swift */; };
 		F4867B0929F145E3002577E8 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0829F145E3002577E8 /* UIView++.swift */; };
 		F4867B0B29F14612002577E8 /* UIButton++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0A29F14612002577E8 /* UIButton++.swift */; };
 		F4867B0F29F14694002577E8 /* UITextField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0E29F14694002577E8 /* UITextField++.swift */; };
+		F492A46B2A00FB33008EB376 /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F492A46A2A00FB33008EB376 /* MyPageTableViewCell.swift */; };
+		F492A46D2A01690A008EB376 /* TopHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F492A46C2A01690A008EB376 /* TopHeader.swift */; };
+		F492A46F2A018967008EB376 /* SecondSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F492A46E2A018967008EB376 /* SecondSectionHeader.swift */; };
+		F492A4772A037AB0008EB376 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F492A4762A037AB0008EB376 /* UIColor+.swift */; };
+		F492A4792A03D7F2008EB376 /* tableviewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F492A4782A03D7F1008EB376 /* tableviewFooter.swift */; };
 		F4AFD77729EED45800354128 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AFD77629EED45800354128 /* AppDelegate.swift */; };
 		F4AFD77929EED45800354128 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AFD77829EED45800354128 /* SceneDelegate.swift */; };
 		F4AFD77E29EED45800354128 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4AFD77C29EED45800354128 /* Main.storyboard */; };
@@ -24,9 +39,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F40C89712A0029CD00611369 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F40C89732A002C7000611369 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		F4162B292A08E1FE005D347F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F4162B2D2A08E278005D347F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		F4162B312A0908BA005D347F /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		F4162B332A095A30005D347F /* MainCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewModel.swift; sourceTree = "<group>"; };
+		F4162B362A095AB3005D347F /* MainPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4162B382A095E92005D347F /* tapBarItem_struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tapBarItem_struct.swift; sourceTree = "<group>"; };
+		F4162B3B2A0A4E82005D347F /* homePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
+		F4162B3D2A0A4ECE005D347F /* livePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = livePageViewController.swift; sourceTree = "<group>"; };
 		F4867B0829F145E3002577E8 /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F4867B0A29F14612002577E8 /* UIButton++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton++.swift"; sourceTree = "<group>"; };
 		F4867B0E29F14694002577E8 /* UITextField++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField++.swift"; sourceTree = "<group>"; };
+		F492A46A2A00FB33008EB376 /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
+		F492A46C2A01690A008EB376 /* TopHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeader.swift; sourceTree = "<group>"; };
+		F492A46E2A018967008EB376 /* SecondSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSectionHeader.swift; sourceTree = "<group>"; };
+		F492A4762A037AB0008EB376 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		F492A4782A03D7F1008EB376 /* tableviewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableviewFooter.swift; sourceTree = "<group>"; };
 		F4AFD77329EED45800354128 /* SOPT_Seminar_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_Seminar_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AFD77629EED45800354128 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4AFD77829EED45800354128 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +83,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4162B282A08E1AD005D347F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4867B0829F145E3002577E8 /* UIView++.swift */,
+				F492A4762A037AB0008EB376 /* UIColor+.swift */,
+				F4867B0E29F14694002577E8 /* UITextField++.swift */,
+				F4867B0A29F14612002577E8 /* UIButton++.swift */,
+				F4162B312A0908BA005D347F /* UIImage+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4162B2C2A08E25A005D347F /* Baseview+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4162B292A08E1FE005D347F /* BaseViewController.swift */,
+				F4162B2D2A08E278005D347F /* BaseView.swift */,
+			);
+			path = "Baseview+Controller";
+			sourceTree = "<group>";
+		};
+		F4162B352A095A53005D347F /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				F40C89712A0029CD00611369 /* MainViewController.swift */,
+				F4162B332A095A30005D347F /* MainCollectionViewModel.swift */,
+				F4162B362A095AB3005D347F /* MainPageCollectionViewCell.swift */,
+				F4162B382A095E92005D347F /* tapBarItem_struct.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		F4162B3A2A0A4E60005D347F /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4162B3B2A0A4E82005D347F /* homePageViewController.swift */,
+				F4162B3D2A0A4ECE005D347F /* livePageViewController.swift */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
 		F4AFD76A29EED45800354128 = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +143,12 @@
 		F4AFD77529EED45800354128 /* SOPT_Seminar_Task */ = {
 			isa = PBXGroup;
 			children = (
-				F4AFD77629EED45800354128 /* AppDelegate.swift */,
+				F4162B3A2A0A4E60005D347F /* PageViewController */,
+				F4162B352A095A53005D347F /* MainPage */,
+				F4162B282A08E1AD005D347F /* Extensions */,
+				F4162B2C2A08E25A005D347F /* Baseview+Controller */,
 				F4AFD77829EED45800354128 /* SceneDelegate.swift */,
+				F4AFD77629EED45800354128 /* AppDelegate.swift */,
 				F4AFD77C29EED45800354128 /* Main.storyboard */,
 				F4AFD77F29EED45A00354128 /* Assets.xcassets */,
 				F4AFD78129EED45A00354128 /* LaunchScreen.storyboard */,
@@ -81,9 +156,11 @@
 				F4AFD78C29EEDBDB00354128 /* Welcome_ViewController.swift */,
 				F4AFD78E29EEDBF400354128 /* ModifiedTextField.swift */,
 				F4AFD79929EEE1DC00354128 /* FisrtViewController.swift */,
-				F4867B0829F145E3002577E8 /* UIView++.swift */,
-				F4867B0A29F14612002577E8 /* UIButton++.swift */,
-				F4867B0E29F14694002577E8 /* UITextField++.swift */,
+				F492A46E2A018967008EB376 /* SecondSectionHeader.swift */,
+				F492A4782A03D7F1008EB376 /* tableviewFooter.swift */,
+				F492A46C2A01690A008EB376 /* TopHeader.swift */,
+				F40C89732A002C7000611369 /* MyPageViewController.swift */,
+				F492A46A2A00FB33008EB376 /* MyPageTableViewCell.swift */,
 			);
 			path = SOPT_Seminar_Task;
 			sourceTree = "<group>";
@@ -172,11 +249,26 @@
 				F4867B0929F145E3002577E8 /* UIView++.swift in Sources */,
 				F4867B0F29F14694002577E8 /* UITextField++.swift in Sources */,
 				F4AFD77729EED45800354128 /* AppDelegate.swift in Sources */,
+				F4162B2E2A08E278005D347F /* BaseView.swift in Sources */,
+				F4162B372A095AB3005D347F /* MainPageCollectionViewCell.swift in Sources */,
 				F4867B0B29F14612002577E8 /* UIButton++.swift in Sources */,
+				F4162B3C2A0A4E82005D347F /* homePageViewController.swift in Sources */,
 				F4AFD78D29EEDBDB00354128 /* Welcome_ViewController.swift in Sources */,
+				F492A46F2A018967008EB376 /* SecondSectionHeader.swift in Sources */,
 				F4AFD79A29EEE1DC00354128 /* FisrtViewController.swift in Sources */,
+				F492A46D2A01690A008EB376 /* TopHeader.swift in Sources */,
+				F492A46B2A00FB33008EB376 /* MyPageTableViewCell.swift in Sources */,
+				F40C89742A002C7000611369 /* MyPageViewController.swift in Sources */,
 				F4AFD77929EED45800354128 /* SceneDelegate.swift in Sources */,
+				F4162B342A095A30005D347F /* MainCollectionViewModel.swift in Sources */,
 				F4AFD78F29EEDBF400354128 /* ModifiedTextField.swift in Sources */,
+				F492A4792A03D7F2008EB376 /* tableviewFooter.swift in Sources */,
+				F4162B2A2A08E1FE005D347F /* BaseViewController.swift in Sources */,
+				F40C89722A0029CD00611369 /* MainViewController.swift in Sources */,
+				F4162B3E2A0A4ECE005D347F /* livePageViewController.swift in Sources */,
+				F492A4772A037AB0008EB376 /* UIColor+.swift in Sources */,
+				F4162B322A0908BA005D347F /* UIImage+.swift in Sources */,
+				F4162B392A095E92005D347F /* tapBarItem_struct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

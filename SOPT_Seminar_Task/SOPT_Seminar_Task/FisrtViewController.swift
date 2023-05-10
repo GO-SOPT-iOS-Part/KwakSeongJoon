@@ -11,6 +11,17 @@ import UIKit
 
 
 final class FisrtViewController: UIViewController, UITextFieldDelegate {
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    // MARK - Helper
+    
+        
+        
 
     
     private let titleLabel = UILabel().then {

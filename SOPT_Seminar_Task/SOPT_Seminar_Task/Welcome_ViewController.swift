@@ -12,6 +12,12 @@ import UIKit
 
 class Welcome_ViewController: UIViewController {
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     private let tvingImage = UIImageView().then{
         
         $0.image = UIImage(named: "image 1.png")
@@ -80,8 +86,8 @@ private extension Welcome_ViewController{
     
     @objc
     func goToMainButtonTapped(){
-        self.navigationController?.popViewController(animated: true)
-    }
+        let secondViewController = MainViewController()
+        self.navigationController?.pushViewController(secondViewController, animated: true)    }
 }
 
 

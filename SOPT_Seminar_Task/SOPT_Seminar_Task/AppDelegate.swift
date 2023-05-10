@@ -9,29 +9,36 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if #available(iOS 13, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = .black
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        }
         return true
     }
-
+    
     // MARK: UISceneSession Lifecycle
-
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
+    
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
+    
+    
 }
 
 
@@ -47,15 +54,15 @@ private var loadInjectionOnce: () = {
     guard objc_getClass("InjectionClient") == nil else {
         return
     }
-    #if os(macOS)
+#if os(macOS)
     let bundleName = "macOSInjection.bundle"
-    #elseif os(tvOS)
+#elseif os(tvOS)
     let bundleName = "tvOSInjection.bundle"
-    #elseif targetEnvironment(simulator)
+#elseif targetEnvironment(simulator)
     let bundleName = "iOSInjection.bundle"
-    #else
+#else
     let bundleName = "maciOSInjection.bundle"
-    #endif
+#endif
     Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/"+bundleName)!.load()
 }()
 
@@ -67,8 +74,8 @@ public class InjectionObserver: ObservableObject {
     let publisher = PassthroughSubject<Void, Never>()
     init() {
         cancellable = NotificationCenter.default.publisher(for:
-            Notification.Name("INJECTION_BUNDLE_NOTIFICATION"))
-            .sink { [weak self] change in
+                                                            Notification.Name("INJECTION_BUNDLE_NOTIFICATION"))
+        .sink { [weak self] change in
             self?.injectionNumber += 1
             self?.publisher.send()
         }
