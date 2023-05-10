@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let injectViewController = Inject.ViewControllerHost(MyPageViewController())
-        let navigationController = UINavigationController(rootViewController: MainViewController())
+        let navigationController = UINavigationController(rootViewController: MovieFirstViewController())
         self.window = UIWindow(windowScene: windowScene)
         self.window?.rootViewController = injectViewController
         self.window?.rootViewController = navigationController

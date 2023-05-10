@@ -17,6 +17,8 @@
 		F4162B392A095E92005D347F /* tapBarItem_struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B382A095E92005D347F /* tapBarItem_struct.swift */; };
 		F4162B3C2A0A4E82005D347F /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B3B2A0A4E82005D347F /* homePageViewController.swift */; };
 		F4162B3E2A0A4ECE005D347F /* livePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B3D2A0A4ECE005D347F /* livePageViewController.swift */; };
+		F4162B432A0B97A3005D347F /* MovieFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B422A0B97A3005D347F /* MovieFirstViewController.swift */; };
+		F4162B452A0B9869005D347F /* MovieFirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B442A0B9869005D347F /* MovieFirstTableViewCell.swift */; };
 		F4867B0929F145E3002577E8 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0829F145E3002577E8 /* UIView++.swift */; };
 		F4867B0B29F14612002577E8 /* UIButton++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0A29F14612002577E8 /* UIButton++.swift */; };
 		F4867B0F29F14694002577E8 /* UITextField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0E29F14694002577E8 /* UITextField++.swift */; };
@@ -49,6 +51,8 @@
 		F4162B382A095E92005D347F /* tapBarItem_struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tapBarItem_struct.swift; sourceTree = "<group>"; };
 		F4162B3B2A0A4E82005D347F /* homePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
 		F4162B3D2A0A4ECE005D347F /* livePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = livePageViewController.swift; sourceTree = "<group>"; };
+		F4162B422A0B97A3005D347F /* MovieFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFirstViewController.swift; sourceTree = "<group>"; };
+		F4162B442A0B9869005D347F /* MovieFirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFirstTableViewCell.swift; sourceTree = "<group>"; };
 		F4867B0829F145E3002577E8 /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F4867B0A29F14612002577E8 /* UIButton++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton++.swift"; sourceTree = "<group>"; };
 		F4867B0E29F14694002577E8 /* UITextField++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField++.swift"; sourceTree = "<group>"; };
@@ -124,6 +128,15 @@
 			path = PageViewController;
 			sourceTree = "<group>";
 		};
+		F4162B412A0B932E005D347F /* Week4_task */ = {
+			isa = PBXGroup;
+			children = (
+				F4162B422A0B97A3005D347F /* MovieFirstViewController.swift */,
+				F4162B442A0B9869005D347F /* MovieFirstTableViewCell.swift */,
+			);
+			path = Week4_task;
+			sourceTree = "<group>";
+		};
 		F4AFD76A29EED45800354128 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +174,7 @@
 				F492A46C2A01690A008EB376 /* TopHeader.swift */,
 				F40C89732A002C7000611369 /* MyPageViewController.swift */,
 				F492A46A2A00FB33008EB376 /* MyPageTableViewCell.swift */,
+				F4162B412A0B932E005D347F /* Week4_task */,
 			);
 			path = SOPT_Seminar_Task;
 			sourceTree = "<group>";
@@ -251,9 +265,11 @@
 				F4AFD77729EED45800354128 /* AppDelegate.swift in Sources */,
 				F4162B2E2A08E278005D347F /* BaseView.swift in Sources */,
 				F4162B372A095AB3005D347F /* MainPageCollectionViewCell.swift in Sources */,
+				F4162B452A0B9869005D347F /* MovieFirstTableViewCell.swift in Sources */,
 				F4867B0B29F14612002577E8 /* UIButton++.swift in Sources */,
 				F4162B3C2A0A4E82005D347F /* homePageViewController.swift in Sources */,
 				F4AFD78D29EEDBDB00354128 /* Welcome_ViewController.swift in Sources */,
+				F4162B432A0B97A3005D347F /* MovieFirstViewController.swift in Sources */,
 				F492A46F2A018967008EB376 /* SecondSectionHeader.swift in Sources */,
 				F4AFD79A29EEE1DC00354128 /* FisrtViewController.swift in Sources */,
 				F492A46D2A01690A008EB376 /* TopHeader.swift in Sources */,
