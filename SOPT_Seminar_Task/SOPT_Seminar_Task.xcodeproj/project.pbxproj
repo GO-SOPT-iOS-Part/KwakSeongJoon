@@ -19,6 +19,11 @@
 		F4162B3E2A0A4ECE005D347F /* livePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B3D2A0A4ECE005D347F /* livePageViewController.swift */; };
 		F4162B432A0B97A3005D347F /* MovieFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B422A0B97A3005D347F /* MovieFirstViewController.swift */; };
 		F4162B452A0B9869005D347F /* MovieFirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B442A0B9869005D347F /* MovieFirstTableViewCell.swift */; };
+		F4162B472A0CDCCF005D347F /* MovieInfo_Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B462A0CDCCF005D347F /* MovieInfo_Struct.swift */; };
+		F4162B4A2A0CF03A005D347F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4162B492A0CF03A005D347F /* Alamofire */; };
+		F4162B4C2A0CF1DC005D347F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B4B2A0CF1DC005D347F /* Config.swift */; };
+		F4162B4E2A0CF412005D347F /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B4D2A0CF412005D347F /* NetworkResult.swift */; };
+		F4162B502A0CF676005D347F /* MovieInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B4F2A0CF676005D347F /* MovieInfoService.swift */; };
 		F4867B0929F145E3002577E8 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0829F145E3002577E8 /* UIView++.swift */; };
 		F4867B0B29F14612002577E8 /* UIButton++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0A29F14612002577E8 /* UIButton++.swift */; };
 		F4867B0F29F14694002577E8 /* UITextField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0E29F14694002577E8 /* UITextField++.swift */; };
@@ -53,6 +58,10 @@
 		F4162B3D2A0A4ECE005D347F /* livePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = livePageViewController.swift; sourceTree = "<group>"; };
 		F4162B422A0B97A3005D347F /* MovieFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFirstViewController.swift; sourceTree = "<group>"; };
 		F4162B442A0B9869005D347F /* MovieFirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFirstTableViewCell.swift; sourceTree = "<group>"; };
+		F4162B462A0CDCCF005D347F /* MovieInfo_Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo_Struct.swift; sourceTree = "<group>"; };
+		F4162B4B2A0CF1DC005D347F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F4162B4D2A0CF412005D347F /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		F4162B4F2A0CF676005D347F /* MovieInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoService.swift; sourceTree = "<group>"; };
 		F4867B0829F145E3002577E8 /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F4867B0A29F14612002577E8 /* UIButton++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton++.swift"; sourceTree = "<group>"; };
 		F4867B0E29F14694002577E8 /* UITextField++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField++.swift"; sourceTree = "<group>"; };
@@ -79,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4AFD79829EEE1A400354128 /* SnapKit in Frameworks */,
+				F4162B4A2A0CF03A005D347F /* Alamofire in Frameworks */,
 				F4AFD79229EEE0DE00354128 /* Inject in Frameworks */,
 				F4AFD79529EEE0E800354128 /* Then in Frameworks */,
 			);
@@ -133,6 +143,10 @@
 			children = (
 				F4162B422A0B97A3005D347F /* MovieFirstViewController.swift */,
 				F4162B442A0B9869005D347F /* MovieFirstTableViewCell.swift */,
+				F4162B462A0CDCCF005D347F /* MovieInfo_Struct.swift */,
+				F4162B4B2A0CF1DC005D347F /* Config.swift */,
+				F4162B4D2A0CF412005D347F /* NetworkResult.swift */,
+				F4162B4F2A0CF676005D347F /* MovieInfoService.swift */,
 			);
 			path = Week4_task;
 			sourceTree = "<group>";
@@ -199,6 +213,7 @@
 				F4AFD79129EEE0DE00354128 /* Inject */,
 				F4AFD79429EEE0E800354128 /* Then */,
 				F4AFD79729EEE1A400354128 /* SnapKit */,
+				F4162B492A0CF03A005D347F /* Alamofire */,
 			);
 			productName = SOPT_Seminar_Task;
 			productReference = F4AFD77329EED45800354128 /* SOPT_Seminar_Task.app */;
@@ -232,6 +247,7 @@
 				F4AFD79029EEE0DE00354128 /* XCRemoteSwiftPackageReference "Inject" */,
 				F4AFD79329EEE0E800354128 /* XCRemoteSwiftPackageReference "Then" */,
 				F4AFD79629EEE1A400354128 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F4162B482A0CF03A005D347F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = F4AFD77429EED45800354128 /* Products */;
 			projectDirPath = "";
@@ -262,6 +278,7 @@
 			files = (
 				F4867B0929F145E3002577E8 /* UIView++.swift in Sources */,
 				F4867B0F29F14694002577E8 /* UITextField++.swift in Sources */,
+				F4162B4C2A0CF1DC005D347F /* Config.swift in Sources */,
 				F4AFD77729EED45800354128 /* AppDelegate.swift in Sources */,
 				F4162B2E2A08E278005D347F /* BaseView.swift in Sources */,
 				F4162B372A095AB3005D347F /* MainPageCollectionViewCell.swift in Sources */,
@@ -274,6 +291,7 @@
 				F4AFD79A29EEE1DC00354128 /* FisrtViewController.swift in Sources */,
 				F492A46D2A01690A008EB376 /* TopHeader.swift in Sources */,
 				F492A46B2A00FB33008EB376 /* MyPageTableViewCell.swift in Sources */,
+				F4162B502A0CF676005D347F /* MovieInfoService.swift in Sources */,
 				F40C89742A002C7000611369 /* MyPageViewController.swift in Sources */,
 				F4AFD77929EED45800354128 /* SceneDelegate.swift in Sources */,
 				F4162B342A095A30005D347F /* MainCollectionViewModel.swift in Sources */,
@@ -283,8 +301,10 @@
 				F40C89722A0029CD00611369 /* MainViewController.swift in Sources */,
 				F4162B3E2A0A4ECE005D347F /* livePageViewController.swift in Sources */,
 				F492A4772A037AB0008EB376 /* UIColor+.swift in Sources */,
+				F4162B472A0CDCCF005D347F /* MovieInfo_Struct.swift in Sources */,
 				F4162B322A0908BA005D347F /* UIImage+.swift in Sources */,
 				F4162B392A095E92005D347F /* tapBarItem_struct.swift in Sources */,
+				F4162B4E2A0CF412005D347F /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=896705abad916682d694fe222fa85646&language=en-US&page=1";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -374,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=896705abad916682d694fe222fa85646&language=en-US&page=1";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -512,6 +534,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F4162B482A0CF03A005D347F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		F4AFD79029EEE0DE00354128 /* XCRemoteSwiftPackageReference "Inject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
@@ -539,6 +569,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F4162B492A0CF03A005D347F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4162B482A0CF03A005D347F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		F4AFD79129EEE0DE00354128 /* Inject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F4AFD79029EEE0DE00354128 /* XCRemoteSwiftPackageReference "Inject" */;

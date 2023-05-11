@@ -13,7 +13,11 @@ class MovieFirstViewController: BaseViewController, UITableViewDataSource, UITab
 
     private let tableView = UITableView()
     
+    
+    
     override func setStyle() {
+        
+        getMovieInfo()
         
         tableView.do{
             $0.register(MovieFirstTableViewCell.self, forCellReuseIdentifier: MovieFirstTableViewCell.identifier)
@@ -39,6 +43,20 @@ class MovieFirstViewController: BaseViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
+    }
+    
+    func getMovieInfo(){
+        
+        MovieInfoService.shared.Movie(){response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? MovieInfo else {return}
+                dump(data)
+            default:
+                return
+            }
+        }
+        
     }
     
     
