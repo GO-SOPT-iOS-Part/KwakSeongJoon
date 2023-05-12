@@ -42,8 +42,7 @@ class MovieInfoService{
     }
     
     private func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
-        print(statusCode)
-        dump(data)
+        
         switch statusCode{
         case 200: return isValidData(data: data)
         case 400,401,404,409: return isValidData(data: data)

@@ -24,6 +24,10 @@
 		F4162B4C2A0CF1DC005D347F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B4B2A0CF1DC005D347F /* Config.swift */; };
 		F4162B4E2A0CF412005D347F /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B4D2A0CF412005D347F /* NetworkResult.swift */; };
 		F4162B502A0CF676005D347F /* MovieInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B4F2A0CF676005D347F /* MovieInfoService.swift */; };
+		F4162B522A0E2AE4005D347F /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B512A0E2AE4005D347F /* UITableViewCell+.swift */; };
+		F4162B542A0E53F9005D347F /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B532A0E53F8005D347F /* ImageCacheManager.swift */; };
+		F4162B572A0E551F005D347F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F4162B562A0E551F005D347F /* Kingfisher */; };
+		F4162B592A0E5827005D347F /* MainAllTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4162B582A0E5827005D347F /* MainAllTableViewController.swift */; };
 		F4867B0929F145E3002577E8 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0829F145E3002577E8 /* UIView++.swift */; };
 		F4867B0B29F14612002577E8 /* UIButton++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0A29F14612002577E8 /* UIButton++.swift */; };
 		F4867B0F29F14694002577E8 /* UITextField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867B0E29F14694002577E8 /* UITextField++.swift */; };
@@ -62,6 +66,9 @@
 		F4162B4B2A0CF1DC005D347F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F4162B4D2A0CF412005D347F /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		F4162B4F2A0CF676005D347F /* MovieInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoService.swift; sourceTree = "<group>"; };
+		F4162B512A0E2AE4005D347F /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
+		F4162B532A0E53F8005D347F /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		F4162B582A0E5827005D347F /* MainAllTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAllTableViewController.swift; sourceTree = "<group>"; };
 		F4867B0829F145E3002577E8 /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F4867B0A29F14612002577E8 /* UIButton++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton++.swift"; sourceTree = "<group>"; };
 		F4867B0E29F14694002577E8 /* UITextField++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField++.swift"; sourceTree = "<group>"; };
@@ -91,6 +98,7 @@
 				F4162B4A2A0CF03A005D347F /* Alamofire in Frameworks */,
 				F4AFD79229EEE0DE00354128 /* Inject in Frameworks */,
 				F4AFD79529EEE0E800354128 /* Then in Frameworks */,
+				F4162B572A0E551F005D347F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +113,7 @@
 				F4867B0E29F14694002577E8 /* UITextField++.swift */,
 				F4867B0A29F14612002577E8 /* UIButton++.swift */,
 				F4162B312A0908BA005D347F /* UIImage+.swift */,
+				F4162B512A0E2AE4005D347F /* UITableViewCell+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 				F4162B332A095A30005D347F /* MainCollectionViewModel.swift */,
 				F4162B362A095AB3005D347F /* MainPageCollectionViewCell.swift */,
 				F4162B382A095E92005D347F /* tapBarItem_struct.swift */,
+				F4162B582A0E5827005D347F /* MainAllTableViewController.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -147,6 +157,7 @@
 				F4162B4B2A0CF1DC005D347F /* Config.swift */,
 				F4162B4D2A0CF412005D347F /* NetworkResult.swift */,
 				F4162B4F2A0CF676005D347F /* MovieInfoService.swift */,
+				F4162B532A0E53F8005D347F /* ImageCacheManager.swift */,
 			);
 			path = Week4_task;
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 				F4AFD79429EEE0E800354128 /* Then */,
 				F4AFD79729EEE1A400354128 /* SnapKit */,
 				F4162B492A0CF03A005D347F /* Alamofire */,
+				F4162B562A0E551F005D347F /* Kingfisher */,
 			);
 			productName = SOPT_Seminar_Task;
 			productReference = F4AFD77329EED45800354128 /* SOPT_Seminar_Task.app */;
@@ -248,6 +260,7 @@
 				F4AFD79329EEE0E800354128 /* XCRemoteSwiftPackageReference "Then" */,
 				F4AFD79629EEE1A400354128 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F4162B482A0CF03A005D347F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F4162B552A0E551F005D347F /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = F4AFD77429EED45800354128 /* Products */;
 			projectDirPath = "";
@@ -276,10 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4162B592A0E5827005D347F /* MainAllTableViewController.swift in Sources */,
 				F4867B0929F145E3002577E8 /* UIView++.swift in Sources */,
 				F4867B0F29F14694002577E8 /* UITextField++.swift in Sources */,
 				F4162B4C2A0CF1DC005D347F /* Config.swift in Sources */,
 				F4AFD77729EED45800354128 /* AppDelegate.swift in Sources */,
+				F4162B542A0E53F9005D347F /* ImageCacheManager.swift in Sources */,
 				F4162B2E2A08E278005D347F /* BaseView.swift in Sources */,
 				F4162B372A095AB3005D347F /* MainPageCollectionViewCell.swift in Sources */,
 				F4162B452A0B9869005D347F /* MovieFirstTableViewCell.swift in Sources */,
@@ -291,6 +306,7 @@
 				F4AFD79A29EEE1DC00354128 /* FisrtViewController.swift in Sources */,
 				F492A46D2A01690A008EB376 /* TopHeader.swift in Sources */,
 				F492A46B2A00FB33008EB376 /* MyPageTableViewCell.swift in Sources */,
+				F4162B522A0E2AE4005D347F /* UITableViewCell+.swift in Sources */,
 				F4162B502A0CF676005D347F /* MovieInfoService.swift in Sources */,
 				F40C89742A002C7000611369 /* MyPageViewController.swift in Sources */,
 				F4AFD77929EED45800354128 /* SceneDelegate.swift in Sources */,
@@ -542,6 +558,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		F4162B552A0E551F005D347F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		F4AFD79029EEE0DE00354128 /* XCRemoteSwiftPackageReference "Inject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
@@ -573,6 +597,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4162B482A0CF03A005D347F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		F4162B562A0E551F005D347F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4162B552A0E551F005D347F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		F4AFD79129EEE0DE00354128 /* Inject */ = {
 			isa = XCSwiftPackageProductDependency;
