@@ -1,11 +1,18 @@
+//
+//  movieResponse.swift
+//  GO_SOPT_Seminar_Assignment
+//
+//  Created by 변희주 on 2023/05/10.
+//
+
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
-//   let movieInfo = try? JSONDecoder().decode(MovieInfo.self, from: jsonData)
+//   let welcome = try? JSONDecoder().decode(Welcome.self, from: jsonData)
 
 import Foundation
 
-// MARK: - MovieInfo
+// MARK: - Welcome
 struct MovieInfo: Codable {
     let dates: Dates
     let page: Int
@@ -59,3 +66,4 @@ enum OriginalLanguage: String, Codable {
     case es = "es"
     case fi = "fi"
 }
+

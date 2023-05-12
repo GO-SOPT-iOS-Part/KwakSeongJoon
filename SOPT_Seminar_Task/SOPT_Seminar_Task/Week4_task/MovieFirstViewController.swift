@@ -7,18 +7,21 @@
 
 import UIKit
 
-class MovieFirstViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
+
+
+final class MovieFirstViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
     
     
 
     private let tableView = UITableView()
+    
+    private var MovieResultData: [Result] = []
     
     
     
     override func setStyle() {
         
         getMovieInfo()
-        
         tableView.do{
             $0.register(MovieFirstTableViewCell.self, forCellReuseIdentifier: MovieFirstTableViewCell.identifier)
             $0.dataSource = self
@@ -46,8 +49,7 @@ class MovieFirstViewController: BaseViewController, UITableViewDataSource, UITab
     }
     
     func getMovieInfo(){
-        
-        MovieInfoService.shared.Movie(){response in
+        MovieInfoService.shared.Movie(){ response in
             switch response {
             case .success(let data):
                 guard let data = data as? MovieInfo else {return}
